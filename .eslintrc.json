@@ -1,0 +1,30 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "jsdoc"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "no-unused-vars": ["error"],
+    "react/destructuring-assignment": ["error", "always"],
+    "jsdoc/require-param-name": 1,
+    "jsdoc/require-param-type": 1,
+    "jsdoc/require-returns": 1,
+    "jsdoc/require-returns-type": 1,
+    "no-multiple-empty-lines": [2, { "max": 2 }],
+    "spaced-comment": ["error"],
+    "comma-spacing": ["error", { "before": false, "after": true }]
+  }
+}
