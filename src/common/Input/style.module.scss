@@ -1,0 +1,22 @@
+.inputDiv {
+  width: 100%;
+  margin: 5px auto;
+
+  .label {
+    text-align: left;
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+
+  .input {
+    display: block;
+    padding: 5px 10px;
+    width: 100%;
+    outline: 2px solid grey;
+    font-size: 1em;
+  }
+
+  .input:focus {
+    outline: 3px solid #42b6f5;
+  }
+}

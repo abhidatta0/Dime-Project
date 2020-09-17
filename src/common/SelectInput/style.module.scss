@@ -1,0 +1,22 @@
+.selectDiv {
+  width: 100%;
+  margin: 5px auto;
+
+  .label {
+    text-align: left;
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+
+  .select {
+    display: block;
+    padding: 5px 10px;
+    outline: 2px solid grey;
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .select:focus {
+    outline: 3px solid #42b6f5;
+  }
+}
