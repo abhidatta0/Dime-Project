@@ -10,6 +10,7 @@ function App() {
     <ErrorBoundary>
       <div className={Style.main}>
         <div className={Style.wrapperDiv}>
+          Done deploy
           <HeaderComponent />
           <AddSubscriptionComponent />
           <ViewSubscriptionComponent />
