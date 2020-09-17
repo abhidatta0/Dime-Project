@@ -13,7 +13,6 @@ const SubscriptionDataReducer = (state = initState, action) => {
         ...newState,
         subscriptions: [...newState.subscriptions, data],
       };
-      console.log('Saved state ', newState);
       break;
     }
     case SubscriptionsActionTypes.DELETE_SUBSCRIPTION: {
@@ -25,7 +24,6 @@ const SubscriptionDataReducer = (state = initState, action) => {
         ...newState,
         subscriptions: newSubscriptions,
       };
-      console.log('Saved state ', newState);
       break;
     }
     default: {

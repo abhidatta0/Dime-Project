@@ -1,0 +1,70 @@
+.subscriptionsContainer {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.detailCard {
+  border: 2px solid #00ff40;
+  padding: 0.5em 0.4em;
+  width: 46%;
+  position: relative;
+  margin: 0.5em 0.1em;
+  animation: fadein 3s;
+  .serviceInfo {
+    font-size: 1.6em;
+    .spanText {
+      font-size: 0.6em;
+    }
+  }
+
+  .circle {
+    background: #4a1b5014;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 1px solid darkolivegreen;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 40px;
+    margin-right: 5px;
+    text-align: center;
+    width: 40px;
+    position: absolute;
+    top: 0.5em;
+    right: 0.1em;
+  }
+
+  .customButtonStyle {
+    background: #ff2f00c9;
+    padding: 5px;
+    margin: 0.4em 0 0;
+    font-size: 0.8em;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .subscriptionsContainer {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 1em;
+    padding-bottom: 2em;
+
+    .detailCard {
+      width: 95%;
+      margin: 0em 0.5em;
+      padding: 0.8em;
+    }
+  }
+}

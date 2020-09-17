@@ -4,7 +4,15 @@ import PropTypes from 'prop-types';
 
 class Input extends Component {
   render() {
-    const { name, label, type, onChange, value } = this.props;
+    const {
+      name,
+      label,
+      type,
+      onChange,
+      value,
+      minValue,
+      maxValue,
+    } = this.props;
     return (
       <div className={Style.inputDiv}>
         <label htmlFor={name} className={Style.label}>
@@ -17,6 +25,8 @@ class Input extends Component {
           className={Style.input}
           onChange={onChange}
           value={value}
+          min={minValue}
+          max={maxValue}
         />
       </div>
     );
@@ -29,6 +39,8 @@ Input.propTypes = {
   onChange: PropTypes.func,
   name: PropTypes.string,
   value: PropTypes.string,
+  minValue: PropTypes.string,
+  maxValue: PropTypes.string,
 };
 
 export default Input;

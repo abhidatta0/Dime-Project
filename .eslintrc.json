@@ -3,6 +3,7 @@
     "browser": true
   },
   "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -19,6 +20,7 @@
   "rules": {
     "no-unused-vars": ["error"],
     "react/destructuring-assignment": ["error", "always"],
+    "react/prop-types": ["error", { "ignore": ["children"] }],
     "jsdoc/require-param-name": 1,
     "jsdoc/require-param-type": 1,
     "jsdoc/require-returns": 1,

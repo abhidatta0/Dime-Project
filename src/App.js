@@ -3,16 +3,19 @@ import Style from './app.module.scss';
 import HeaderComponent from './components/headerComponent';
 import AddSubscriptionComponent from './components/AddSubscriptionComponent';
 import ViewSubscriptionComponent from './components/ViewSubscriptionComponent';
+import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
   return (
-    <div className={Style.main}>
-      <div className={Style.wrapperDiv}>
-        <HeaderComponent />
-        <AddSubscriptionComponent />
-        <ViewSubscriptionComponent />
+    <ErrorBoundary>
+      <div className={Style.main}>
+        <div className={Style.wrapperDiv}>
+          <HeaderComponent />
+          <AddSubscriptionComponent />
+          <ViewSubscriptionComponent />
+        </div>
       </div>
-    </div>
+    </ErrorBoundary>
   );
 }
 

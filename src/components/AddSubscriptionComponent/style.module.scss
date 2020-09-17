@@ -1,0 +1,50 @@
+.mainDiv {
+  text-align: center;
+  animation: fadein 2s;
+
+  .formDiv {
+    width: 35%;
+    margin: auto;
+    border: 1px solid #1e7309;
+    padding: 1em 2em;
+    border-radius: 9%;
+
+    .error {
+      color: red;
+      font-size: 0.9em;
+    }
+    .cancelSaveButtonWrapper {
+      display: flex;
+      width: 100%;
+      margin: 5px auto;
+      justify-content: space-between;
+
+      .customButtonStyle {
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 1.5em;
+        background-color: white;
+        color: blue;
+        border: 2px solid;
+      }
+    }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .mainDiv {
+    .formDiv {
+      width: 100%;
+      padding: 1em;
+    }
+  }
+}
