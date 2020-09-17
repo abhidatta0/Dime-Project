@@ -24,7 +24,9 @@ class ViewSubscriptionComponent extends Component {
           ))}
         </>
       ) : (
-        <div style={{ color: '#ff6347', fontWeight: '500' }}>
+        <div
+          style={{ color: '#ff6347', fontWeight: '500', textAlign: 'center' }}
+        >
           <p>No subscriptions added yet!</p>
         </div>
       );

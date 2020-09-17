@@ -1,5 +1,5 @@
 .headerDiv {
-  margin: 0 10px;
+  margin: 10px;
   height: 30px;
   background-color: white;
   text-align: center;
@@ -9,6 +9,6 @@
 
 @media screen and (max-width: 512px) {
   .headerDiv {
-    margin: 0;
+    margin: 1em 0 0 0;
   }
 }
