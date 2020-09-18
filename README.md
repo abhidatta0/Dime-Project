@@ -1,6 +1,6 @@
 ### Dime is an frontend-webapp using React which allows us to view / add / remove our subscriptions.
 
-    Live at: https://dimebyabhirup.netlify.app/
+    Live at: [ https://dimebyabhirup.netlify.app ]
 
 ### Features:
 
@@ -11,3 +11,4 @@
 - Responsive on desktop ,IphoneX and Pixel2XL (tested by devtools)
 
 - View the number of days left in priority colors
+ 
