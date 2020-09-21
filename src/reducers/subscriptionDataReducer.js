@@ -11,7 +11,7 @@ const SubscriptionDataReducer = (state = initState, action) => {
       const { data } = action;
       newState = {
         ...newState,
-        subscriptions: [...newState.subscriptions, data],
+        subscriptions: [data, ...newState.subscriptions],
       };
       break;
     }

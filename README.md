@@ -1,4 +1,4 @@
-### Dime is an frontend-webapp using React which allows us to view / add / remove our subscriptions.
+### Dime is an frontend-webapp using React and Redux which allows us to view / add / remove our subscriptions.
 
 ###  Live at: <https://dimebyabhirup.netlify.app>
 

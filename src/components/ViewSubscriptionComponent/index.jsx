@@ -13,7 +13,7 @@ class ViewSubscriptionComponent extends Component {
   render() {
     const { subscriptions } = this.props;
     const element =
-      subscriptions.length > 0 ? (
+      subscriptions ? (
         <>
           {subscriptions.map((subscription) => (
             <SubcriptionDetailsCard
@@ -24,12 +24,12 @@ class ViewSubscriptionComponent extends Component {
           ))}
         </>
       ) : (
-        <div
-          style={{ color: '#ff6347', fontWeight: '500', textAlign: 'center' }}
-        >
-          <p>No subscriptions added yet!</p>
-        </div>
-      );
+          <div
+            style={{ color: '#ff6347', fontWeight: '500', textAlign: 'center' }}
+          >
+            <p>No subscriptions added yet!</p>
+          </div>
+        );
     return <div className={Style.subscriptionsContainer}>{element}</div>;
   }
 }
