@@ -1,9 +1,19 @@
-.subscriptionsContainer {
+.wrapperDiv{
   width: 50%;
   margin: auto;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  .headerDiv{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    .highlight{
+      font-weight: 700;
+    }
+  }
+  .subscriptionsContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
 }
 
 .detailCard {

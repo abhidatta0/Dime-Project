@@ -38,7 +38,7 @@ Input.propTypes = {
   type: PropTypes.string,
   onChange: PropTypes.func,
   name: PropTypes.string,
-  value: PropTypes.string,
+  value: PropTypes.any,
   minValue: PropTypes.string,
   maxValue: PropTypes.string,
 };

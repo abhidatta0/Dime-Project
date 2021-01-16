@@ -12,7 +12,16 @@ class ViewSubscriptionComponent extends Component {
   };
   render() {
     const { subscriptions } = this.props;
-    const element =
+    const totalPermonth = subscriptions.reduce((acc, sub) => {
+      const { cycle, amount } = sub;
+      if (cycle === 'y') {
+        return acc + parseInt(amount) / 12;
+      }
+      else {
+        return acc + parseInt(amount)
+      }
+    }, 0);
+    const cardViewHtml = 
       subscriptions ? (
         <>
           {subscriptions.map((subscription) => (
@@ -30,7 +39,12 @@ class ViewSubscriptionComponent extends Component {
             <p>No subscriptions added yet!</p>
           </div>
         );
-    return <div className={Style.subscriptionsContainer}>{element}</div>;
+    return <div className={Style.wrapperDiv}>
+      <div className={Style.headerDiv}>Total amount per month : <span className={Style.highlight}>  ₹ {totalPermonth.toFixed(2)}</span></div>
+      <div className={Style.subscriptionsContainer}>
+        {cardViewHtml}
+      </div>
+    </div>;
   }
 }
 
