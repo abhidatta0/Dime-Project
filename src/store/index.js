@@ -11,8 +11,7 @@ store.subscribe(
     saveState({
       subscriptionDataReducer: store.getState().subscriptionDataReducer,
     });
-  }),
-  1000
+  },1000),
 );
 
 export default store;
