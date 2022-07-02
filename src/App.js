@@ -1,13 +1,17 @@
-import React from 'react';
+import React, {lazy, Suspense} from 'react';
 import Style from './app.module.scss';
-import HeaderComponent from './components/headerComponent';
 import AddSubscriptionComponent from './components/AddSubscriptionComponent';
-import ViewSubscriptionComponent from './components/ViewSubscriptionComponent';
 import ErrorBoundary from './components/ErrorBoundary';
+
+const HeaderComponent = lazy(()=> import('./components/headerComponent'));
+const ViewSubscriptionComponent = lazy(()=> import('./components/ViewSubscriptionComponent'));
+
+const renderLoader = () => <p>Loading</p>;
 
 function App() {
   return (
     <ErrorBoundary>
+      <Suspense fallback={renderLoader()}>
       <div className={Style.main}>
         <div className={Style.wrapperDiv}>
           <HeaderComponent />
@@ -15,6 +19,7 @@ function App() {
           <ViewSubscriptionComponent />
         </div>
       </div>
+      </Suspense>
     </ErrorBoundary>
   );
 }
